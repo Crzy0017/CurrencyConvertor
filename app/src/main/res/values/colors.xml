@@ -12,4 +12,9 @@
     <color name="search_chip_background">#FFFFFF</color>
     <color name="search_chip_text_selected">#FFFFFF</color>
     <color name="search_chip_text">#000000</color>
+    <color name="button">#F5F5F5</color>
+    <color name="stroke">#1789DB</color>
+    <color name="correct">#0CAABF</color>
+    <color name="text">#C3BCBC</color>
+    <color name="wrong">#CA3F3F</color>
 </resources>

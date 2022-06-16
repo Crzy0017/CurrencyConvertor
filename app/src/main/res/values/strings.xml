@@ -13,4 +13,13 @@
     <string name="currency_usa">Доллары. США</string>
     <string name="currency_euro">Евро. ЕС</string>
     <string name="currency_tr">Лира. Турция</string>
+    <string name="cam">Запустить камеру</string>
+    <string name="call">Позвонить</string>
+    <string name="mail">Отправить по почте</string>
+    <string name="share">Поделиться</string>
+    <string name="gmail">aliabibulla7717@gmail.com</string>
+    <string name="fullname">Ali Abibulla</string>
+    <string name="newtext">Личная страница</string>
+    <string name="full_name">Ali Abibulla</string>
+    <string name="email">aliabibulla@gmail.com</string>
 </resources>

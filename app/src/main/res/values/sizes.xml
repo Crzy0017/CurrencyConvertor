@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="buttonWidth">77dp</dimen>
+    <dimen name="buttonHeight">63dp</dimen>
+    <dimen name="corner">11dp</dimen>
+    <dimen name="stroke">2.5dp</dimen>
+    <dimen name="buttonText">30sp</dimen>
+    <dimen name="textview">40sp</dimen>
+</resources>
