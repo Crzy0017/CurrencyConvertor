@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">currencyI</string>
+    <string name="add">Добавить</string>
+    <string name="tenge">Тенге, Казахстан</string>
+    <string name="title">Convertor</string>
+    <string name="cancelText">Вы уверены,что хотите удалить валюту?</string>
+    <string name="first">fragment1</string>
+    <string name="second">fragment2</string>
+    <string name="third">fragment3</string>
+    <string name="fourth">fragment4</string>
+    <string name="fifth">fragment5</string>
+    <string name="currency_kz">Тенге. Казахстан</string>
+    <string name="currency_usa">Доллары. США</string>
+    <string name="currency_euro">Евро. ЕС</string>
+    <string name="currency_tr">Лира. Турция</string>
+</resources>
