@@ -19,7 +19,7 @@ import com.example.currencyi.domain.models.Add
 import com.example.currencyi.domain.models.Currency
 import com.google.android.material.textfield.TextInputEditText
 
-class ThirdFragment : Fragment(R.layout.third_fragment), ItemTouchDelegate, FirstDialogCallBack, BottomSheetDialog.NewBottomSheet {
+class ThirdFragment : Fragment(R.layout.fragment_third), ItemTouchDelegate, FirstDialogCallBack, BottomSheetDialog.NewBottomSheet {
     private var currencyList = mutableListOf(
         Currency("Тенге, Казахстан", 150000, 10, R.drawable.kz),
         Currency("Евро, ОС", 70000, 9, R.drawable.eu),
