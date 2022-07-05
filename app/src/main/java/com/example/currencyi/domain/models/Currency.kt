@@ -4,7 +4,8 @@ import androidx.annotation.DrawableRes
 
 data class Currency(
     val textview: String,
-    val value: Int,
+    var amount: Int,
     val id: Int,
-    @DrawableRes val imageRes: Int
+    @DrawableRes val imageRes: Int,
+    val conversionRate: Float
 ): Views

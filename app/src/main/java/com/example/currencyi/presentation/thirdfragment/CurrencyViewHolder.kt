@@ -16,7 +16,7 @@ class CurrencyViewHolder (inflater: LayoutInflater, parent: ViewGroup, val chang
     private val label = itemView.findViewById<TextView>(R.id.Label)
     private val img = itemView.findViewById<ImageView>(R.id.Image)
     fun onBind(item: Currency) {
-        currencyText.editText?.setText(item.value.toString())
+        currencyText.editText?.setText(item.amount.toString())
         currencyText.hint = item.textview
         label.text = item.textview
         img.setBackgroundResource(item.imageRes)

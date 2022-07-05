@@ -11,4 +11,16 @@ class ThirdViewModel: ViewModel() {
     private val _currencyConvertor = MutableLiveData<MutableList<Currency>>()
     val currencyConvertor: LiveData<MutableList<Currency>> = _currencyConvertor
 
+    fun appendCurrency(currency: Currency) {
+        val currentList = _currencyConvertor.value
+        currentList?.add(currency)
+        _currencyConvertor.value = currentList!!
+    }
+
+    fun convertCurrency(valueNew: Float) {
+        _currencyConvertor.value?.forEach {
+            it.amount = (it.conversionRate * valueNew).toInt()
+        }
+    }
+
 }

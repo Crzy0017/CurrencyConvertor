@@ -20,6 +20,7 @@ class Adapter(
 ): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private val data = mutableListOf<Views>()
+    lateinit var currencyNew: List<Currency>
 
     @SuppressLint("ClickableViewAccessibility")
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
@@ -78,7 +79,7 @@ class Adapter(
 
     fun sortB() {
         data.removeLast()
-        data.sortBy{ (it as Currency).value }
+        data.sortBy{ (it as Currency).amount }
         data.add(Add())
         notifyDataSetChanged()
     }

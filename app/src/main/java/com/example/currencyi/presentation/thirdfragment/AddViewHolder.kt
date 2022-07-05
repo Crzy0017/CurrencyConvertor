@@ -8,7 +8,7 @@ import com.example.currencyi.R
 import com.example.currencyi.domain.models.Currency
 
 
-private val newCurrency = Currency("Тенге, Казахстан", 500000, 1, R.drawable.kz)
+private val newCurrency = Currency("Тенге, Казахстан", 500000, 1, R.drawable.kz, 1.0F)
 class AddViewHolder (
     inflater: LayoutInflater,
     parent: ViewGroup,
