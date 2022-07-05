@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/firstFragment"
+        android:id="@+id/navigation_first"
         android:title="@string/first"
+        android:enabled="true"
         android:icon="@drawable/ic_first" />
     <item
-        android:id="@+id/secondFragment"
+        android:id="@+id/navigation_second"
         android:title="@string/second"
+        android:enabled="true"
         android:icon="@drawable/ic_second" />
 
     <item
-        android:id="@+id/thirdFragment"
+        android:id="@+id/navigation_third"
         android:title="@string/third"
+        android:enabled="true"
         android:icon="@drawable/ic_third"/>
 
     <item
-        android:id="@+id/fourthFragment"
+        android:id="@+id/navigation_fourth"
         android:title="@string/fourth"
+        android:enabled="true"
         android:icon="@drawable/ic_fourth" />
 
     <item
-        android:id="@+id/fifthFragment"
+        android:id="@+id/navigation_fifth"
         android:title="@string/fifth"
+        android:enabled="true"
         android:icon="@drawable/ic_fifth" />
 </menu>

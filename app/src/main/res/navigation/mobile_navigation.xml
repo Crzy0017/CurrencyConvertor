@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_third">
+
+    <fragment
+        android:id="@+id/navigation_first"
+        android:name="com.example.currencyi.presentation.firstfragment.FirstFragment"
+        android:label="Translator"
+        tools:layout="@layout/fragment_first">
+        <deepLink
+            app:action="android.intent.action.VIEW"
+            app:uri="hrvspctr.net/first" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_second"
+        android:name="com.example.currencyi.presentation.secondfragment.SecondFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_second" >
+        <deepLink
+            app:action="android.intent.action.VIEW"
+            app:uri="hrvspctr.net/second" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_third"
+        android:name="com.example.currencyi.presentation.thirdfragment.ThirdFragment"
+        android:label="Converter"
+        tools:layout="@layout/fragment_third" >
+        <deepLink
+            app:action="android.intent.action.VIEW"
+            app:uri="hrvspctr.net/third" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_fourth"
+        android:name="com.example.currencyi.presentation.fourthfragment.FourthFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_fourth" >
+        <deepLink
+            app:action="android.intent.action.VIEW"
+            app:uri="hrvspctr.net/fourth" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_fifth"
+        android:name="com.example.currencyi.presentation.fifthfragment.FifthFragment"
+        android:label="Personal Page"
+        tools:layout="@layout/fragment_fifth" >
+        <deepLink
+            app:action="android.intent.action.VIEW"
+            app:uri="hrvspctr.net/fifth" />
+    </fragment>
+
+
+</navigation>
