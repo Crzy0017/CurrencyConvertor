@@ -10,6 +10,9 @@
         android:name="com.example.currencyi.presentation.firstfragment.FirstFragment"
         android:label="Translator"
         tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_navigation_first_to_second"
+            app:destination="@id/navigation_second"/>
         <deepLink
             app:action="android.intent.action.VIEW"
             app:uri="hrvspctr.net/first" />
@@ -30,6 +33,9 @@
         android:name="com.example.currencyi.presentation.thirdfragment.ThirdFragment"
         android:label="Converter"
         tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_navigation_third_to_fifth"
+            app:destination="@id/navigation_fifth"/>
         <deepLink
             app:action="android.intent.action.VIEW"
             app:uri="hrvspctr.net/third" />

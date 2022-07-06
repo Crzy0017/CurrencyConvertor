@@ -1,8 +1,6 @@
 package com.example.currencyi.presentation.thirdfragment
 
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.view.*
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.DialogFragment
@@ -71,20 +69,20 @@ class ThirdFragment : Fragment(R.layout.fragment_third), ItemTouchDelegate, Firs
             currencyAdapter!!.currencyNew = it
         }
 
-        val enteredAmount: TextInputEditText = view.findViewById(R.id.TextField)
-        enteredAmount.addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
-            override fun afterTextChanged(s: Editable?) {
-                val value = s.toString()
-                if (value.isNotBlank()) {
-                    val convertorThread = Thread {
-                        thirdViewModel.convertCurrency(value.toFloat())
-                    }
-                    convertorThread.start()
-                }
-            }
-        })
+//        val enteredAmount: TextInputEditText = view.findViewById(R.id.TextField)
+//        enteredAmount.addTextChangedListener(object : TextWatcher {
+//            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+//            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+//            override fun afterTextChanged(s: Editable?) {
+//                val value = s.toString()
+//                if (value.isNotBlank()) {
+//                    val convertorThread = Thread {
+//                        thirdViewModel.convertCurrency(value.toFloat())
+//                    }
+//                    convertorThread.start()
+//                }
+//            }
+//        })
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
@@ -197,7 +195,7 @@ class ThirdFragment : Fragment(R.layout.fragment_third), ItemTouchDelegate, Firs
         typeCurrencyCost: TextInputEditText,
         res: Int
     ) {
-        var newCurrencyAdd = Currency(typeCurrencyType.text.toString(), Integer.parseInt(typeCurrencyCost.text.toString()), 1, res, 5.0F)
+        val newCurrencyAdd = Currency(typeCurrencyType.text.toString(), Integer.parseInt(typeCurrencyCost.text.toString()), 1, res, 5.0F)
         currencyAdapter?.addItem(newCurrencyAdd)
     }
 
