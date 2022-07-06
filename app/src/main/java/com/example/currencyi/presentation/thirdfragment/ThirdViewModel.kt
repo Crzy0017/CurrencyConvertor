@@ -18,9 +18,7 @@ class ThirdViewModel: ViewModel() {
     }
 
     fun convertCurrency(valueNew: Float) {
-        _currencyConvertor.value?.forEach {
-            it.amount = (it.conversionRate * valueNew).toInt()
-        }
+        val newValue = valueNew
     }
 
 }

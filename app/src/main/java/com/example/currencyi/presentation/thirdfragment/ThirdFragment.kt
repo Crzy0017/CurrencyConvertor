@@ -1,6 +1,8 @@
 package com.example.currencyi.presentation.thirdfragment
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.*
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.DialogFragment
@@ -76,10 +78,10 @@ class ThirdFragment : Fragment(R.layout.fragment_third), ItemTouchDelegate, Firs
 //            override fun afterTextChanged(s: Editable?) {
 //                val value = s.toString()
 //                if (value.isNotBlank()) {
-//                    val convertorThread = Thread {
+//                    val thread = Thread {
 //                        thirdViewModel.convertCurrency(value.toFloat())
 //                    }
-//                    convertorThread.start()
+//                    thread.start()
 //                }
 //            }
 //        })
@@ -99,7 +101,6 @@ class ThirdFragment : Fragment(R.layout.fragment_third), ItemTouchDelegate, Firs
         menu.findItem(chosenIndex).isChecked = true
         super.onPrepareOptionsMenu(menu)
     }
-
 
     private fun onOptionsItemSelected() {
         defaultToolbar.setOnMenuItemClickListener {
