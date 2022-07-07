@@ -6,10 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.example.currencyi.R
+import com.example.currencyi.presentation.thirdfragment.ThirdViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
 class SelectCurrencyBottomSheet: BottomSheetDialogFragment(){
 
+    val viewModel: ThirdViewModel by sharedViewModel()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
         inflater.inflate(R.layout.select_currency_bottom_sheet, container, false)

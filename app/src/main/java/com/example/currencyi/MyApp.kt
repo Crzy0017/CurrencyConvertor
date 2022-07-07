@@ -5,9 +5,9 @@ import com.example.currencyi.di.mainModule
 import org.koin.core.context.startKoin
 import org.koin.dsl.module
 
-class MyApp: Application() {
+class MyApp : Application() {
     override fun onCreate() {
         super.onCreate()
-        startKoin {module { mainModule}}
+        startKoin { modules(mainModule) }
     }
 }

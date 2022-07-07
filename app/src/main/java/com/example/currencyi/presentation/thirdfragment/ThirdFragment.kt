@@ -21,6 +21,7 @@ import com.example.currencyi.presentation.thirdfragment.itemtouchhelper.SwipeRig
 import com.example.currencyi.domain.models.Add
 import com.example.currencyi.domain.models.Currency
 import com.google.android.material.textfield.TextInputEditText
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class ThirdFragment : Fragment(R.layout.fragment_third), ItemTouchDelegate, FirstDialogCallBack, BottomSheetDialog.NewBottomSheet {
     private var currencyList = mutableListOf(
@@ -35,8 +36,7 @@ class ThirdFragment : Fragment(R.layout.fragment_third), ItemTouchDelegate, Firs
         Add()
     )
 
-    private val thirdViewModel: ThirdViewModel by viewModels()
-
+    private val thirdViewModel: ThirdViewModel by viewModel()
     private lateinit var defaultToolbar: androidx.appcompat.widget.Toolbar
     private  var currencyAdapter: Adapter? = null
     private var currencyManager: LinearLayoutManager? = null

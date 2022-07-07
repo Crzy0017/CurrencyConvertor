@@ -9,13 +9,16 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.FragmentManager
 import com.example.currencyi.R
+import com.example.currencyi.presentation.thirdfragment.ThirdViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.textfield.TextInputEditText
+import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
 class BottomSheetDialog: BottomSheetDialogFragment(), SelectCurrencyBottomSheet.SendDataToFirstBottomSheet{
 
     private lateinit var typeCurrencyType: TextInputEditText
     var respectiveFlag: Int? = null
+    val viewModel: ThirdViewModel by sharedViewModel()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
         inflater.inflate(R.layout.bottom_sheet_add_currency, container, false)
