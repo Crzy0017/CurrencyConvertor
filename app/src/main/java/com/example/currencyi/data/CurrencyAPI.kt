@@ -6,7 +6,7 @@ import retrofit2.http.GET
 import retrofit2.http.Header
 import retrofit2.http.Query
 
-private const val API_KEY = "rNdVTpMEujbfAiZJXUWWo5FUj1LXRLcX'5"
+private const val API_KEY = "rNdVTpMEujbfAiZJXUWWo5FUj1LXRLcX"
 
 interface CurrencyAPI {
     @GET("list")

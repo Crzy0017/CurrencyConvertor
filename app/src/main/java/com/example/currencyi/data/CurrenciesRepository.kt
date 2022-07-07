@@ -2,13 +2,16 @@ package com.example.currencyi.data
 
 import android.os.Build
 import androidx.annotation.RequiresApi
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import com.example.currencyi.R
 import com.example.currencyi.domain.models.Currency
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import java.util.*
 
-class CurrenciesRepository(val network: CurrencyService) {
+class CurrenciesRepository(private val network: CurrencyService) {
 
-    @RequiresApi(Build.VERSION_CODES.O)
     suspend fun getCurrencies() : List<Currency> {
         val currencyNames = network.apiService.getCurrencyNames().currencies
         val currencyRates = network.apiService.getCurrencyRates("2022-07-01", "2022-07-01").quotes

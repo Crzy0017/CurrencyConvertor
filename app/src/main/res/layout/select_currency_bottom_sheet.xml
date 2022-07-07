@@ -4,132 +4,16 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:minHeight="400dp"
     android:orientation="vertical"
-    android:background="#91000000">
+    android:background="@android:color/white">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="295dp"
-        android:background="@drawable/bottom_sheet_style"
-        android:backgroundTint="@null"
-        android:padding="12dp">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_currencies"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="106dp"
-            android:text="Добавить валюту"
-            android:textSize="22sp"
-            android:textColor="#000"/>
 
-        <View
-            android:layout_width="52dp"
-            android:layout_height="52dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/viewbcg" />
-
-        <ImageView
-
-            android:layout_width="52dp"
-            android:layout_height="28.55dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="53dp"
-            android:background="@drawable/kz" />
-
-        <TextView
-            android:id="@+id/kazFlag"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Тенге, Kазахстан"
-            android:textSize="22sp"
-            android:textColor="#000"
-            android:layout_marginTop="53dp"
-            android:layout_marginStart="70dp"
-            android:clickable="true"
-            android:focusable="true" />
-
-        <View
-            android:layout_width="52dp"
-            android:layout_height="52dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="100dp"
-            android:background="@drawable/viewbcg" />
-
-        <ImageView
-
-            android:layout_width="52dp"
-            android:layout_height="28.55dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="113dp"
-            android:background="@drawable/eu" />
-
-        <TextView
-            android:id="@+id/euroFlag"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="113dp"
-            android:text="Евро, EC"
-            android:textColor="#000"
-            android:textSize="22sp"
-            android:clickable="true"
-            android:focusable="true" />
-
-        <View
-            android:layout_width="52dp"
-            android:layout_height="52dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="160dp"
-            android:background="@drawable/viewbcg" />
-
-        <ImageView
-
-            android:layout_width="52dp"
-            android:layout_height="28.55dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="173dp"
-            android:background="@drawable/usa" />
-
-        <TextView
-            android:id="@+id/usaFlag"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Доллары, США"
-            android:textSize="22sp"
-            android:textColor="#000"
-            android:layout_marginTop="173dp"
-            android:layout_marginStart="70dp"
-            android:clickable="true"
-            android:focusable="true" />
-
-        <View
-            android:layout_width="52dp"
-            android:layout_height="52dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="220dp"
-            android:background="@drawable/viewbcg" />
-
-        <ImageView
-
-            android:layout_width="52dp"
-            android:layout_height="28.55dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="233dp"
-            android:background="@drawable/tur" />
-
-        <TextView
-            android:id="@+id/turFlag"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Лира, Турция"
-            android:textSize="22sp"
-            android:textColor="#000"
-            android:layout_marginTop="233dp"
-            android:layout_marginStart="70dp"
-            android:clickable="true"
-            android:focusable="true" />
-
-    </FrameLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

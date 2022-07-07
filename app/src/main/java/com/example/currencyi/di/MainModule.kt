@@ -10,5 +10,5 @@ import org.koin.dsl.module
 val mainModule = module {
     factory { CurrencyService() }
     factory { CurrenciesRepository(get())}
-    viewModel { ThirdViewModel(get(), Dispatchers.IO) }
+    viewModel { ThirdViewModel(get()) }
 }

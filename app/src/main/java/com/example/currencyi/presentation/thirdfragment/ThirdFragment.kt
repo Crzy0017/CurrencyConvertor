@@ -1,16 +1,15 @@
 package com.example.currencyi.presentation.thirdfragment
 
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.view.*
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.*
 import com.example.currencyi.R
+import com.example.currencyi.domain.models.Add
+import com.example.currencyi.domain.models.Currency
 import com.example.currencyi.presentation.thirdfragment.dialog.BottomSheetDialog
 import com.example.currencyi.presentation.thirdfragment.dialog.FirstDialogCallBack
 import com.example.currencyi.presentation.thirdfragment.dialog.FirstDialogFragment
@@ -18,10 +17,8 @@ import com.example.currencyi.presentation.thirdfragment.dialog.SelectCurrencyBot
 import com.example.currencyi.presentation.thirdfragment.itemtouchhelper.DragDrop
 import com.example.currencyi.presentation.thirdfragment.itemtouchhelper.ItemTouchDelegate
 import com.example.currencyi.presentation.thirdfragment.itemtouchhelper.SwipeRight
-import com.example.currencyi.domain.models.Add
-import com.example.currencyi.domain.models.Currency
 import com.google.android.material.textfield.TextInputEditText
-import org.koin.androidx.viewmodel.ext.android.viewModel
+import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
 class ThirdFragment : Fragment(R.layout.fragment_third), ItemTouchDelegate, FirstDialogCallBack, BottomSheetDialog.NewBottomSheet {
     private var currencyList = mutableListOf(
@@ -36,7 +33,7 @@ class ThirdFragment : Fragment(R.layout.fragment_third), ItemTouchDelegate, Firs
         Add()
     )
 
-    private val thirdViewModel: ThirdViewModel by viewModel()
+    private val thirdViewModel: ThirdViewModel by sharedViewModel()
     private lateinit var defaultToolbar: androidx.appcompat.widget.Toolbar
     private  var currencyAdapter: Adapter? = null
     private var currencyManager: LinearLayoutManager? = null
@@ -67,9 +64,9 @@ class ThirdFragment : Fragment(R.layout.fragment_third), ItemTouchDelegate, Firs
         onOptionsItemSelected()
         setupCurrency()
 
-        thirdViewModel.currencyConvertor.observeForever {
-            currencyAdapter!!.currencyNew = it
-        }
+//        thirdViewModel.currencyConvertor.observeForever {
+//            currencyAdapter!!.currencyNew = it
+//        }
 
 //        val enteredAmount: TextInputEditText = view.findViewById(R.id.TextField)
 //        enteredAmount.addTextChangedListener(object : TextWatcher {
