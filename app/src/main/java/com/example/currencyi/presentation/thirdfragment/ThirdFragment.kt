@@ -49,13 +49,6 @@ class ThirdFragment : Fragment(R.layout.fragment_third), ItemTouchDelegate, Firs
         setHasOptionsMenu(true)
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return super.onCreateView(inflater, container, savedInstanceState)
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -63,25 +56,6 @@ class ThirdFragment : Fragment(R.layout.fragment_third), ItemTouchDelegate, Firs
         defaultToolbar.inflateMenu(R.menu.menu_with_submenu)
         onOptionsItemSelected()
         setupCurrency()
-
-//        thirdViewModel.currencyConvertor.observeForever {
-//            currencyAdapter!!.currencyNew = it
-//        }
-
-//        val enteredAmount: TextInputEditText = view.findViewById(R.id.TextField)
-//        enteredAmount.addTextChangedListener(object : TextWatcher {
-//            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-//            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
-//            override fun afterTextChanged(s: Editable?) {
-//                val value = s.toString()
-//                if (value.isNotBlank()) {
-//                    val thread = Thread {
-//                        thirdViewModel.convertCurrency(value.toFloat())
-//                    }
-//                    thread.start()
-//                }
-//            }
-//        })
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

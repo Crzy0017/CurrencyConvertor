@@ -47,7 +47,12 @@
         <entry key="app/src/main/res/layout/fifth_fragment.xml" value="0.1816123188405797" />
         <entry key="app/src/main/res/layout/first_fragmrent.xml" value="0.1816123188405797" />
         <entry key="app/src/main/res/layout/fourth_fragment.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_empty.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/fragment_fifth.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.333786231884058" />
+        <entry key="app/src/main/res/layout/fragment_fourth.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/fragment_info.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/fragment_statistics.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_third.xml" value="0.333786231884058" />
         <entry key="app/src/main/res/layout/item_currency.xml" value="0.333786231884058" />
         <entry key="app/src/main/res/layout/item_kz.xml" value="0.333786231884058" />
